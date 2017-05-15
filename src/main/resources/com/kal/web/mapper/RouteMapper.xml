@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kal.web.mapper.RouteMapper">
+	<resultMap id="Route" type="com.kal.web.domain.Route">
+		<id property="routeSeq" column="route_seq" />
+		<result property="flightSeq" column="flight_seq" />
+		
+	</resultMap>
+
+	<!--C -->
+	<insert id="addRoute">
+	
+	</insert>
+
+	<!--  COUNT  -->
+	<select id="findNumberOfRoutes" resultType="int">
+	</select>
+
+	<!--R -->
+	<select id="findRoute" resultMap="Route" parameterType="hashMap">
+	</select>
+	<select id="findRouteS" resultMap="Route" parameterType="hashMap">
+	</select>
+
+	<!--U -->
+	<update id="updateRoute">
+	</update>
+	
+	<!--D-->
+	<select id="deleteRoute" >
+	</select>
+
+</mapper>

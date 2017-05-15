@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kal.web.mapper.BoardFAQMapper" >
+     <resultMap id="BoardFAQ" type="com.kal.web.domain.BoardFAQ">
+       <id property="id" column="faq_seq"/>
+     </resultMap>
+      <insert id="addBoardFAQ"></insert>
+      <select id="findBoardFAQ" resultMap="BoardFAQ" parameterType="hashMap"></select>
+      <select id="findBoardFAQs" resultMap="BoardFAQ" parameterType="hashMap"></select>
+      <select id="findNumberOfBoardFAQs"  resultType="int" parameterType="hashMap"></select>
+      <update id="updateBoardFAQ"></update>
+      <delete id="deleteBoardFAQ"></delete>
+     
+</mapper>
