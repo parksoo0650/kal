@@ -4,10 +4,16 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Document</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <link rel="stylesheet" href="${context}/resources/css/reset.css" />
 <link rel="stylesheet" href="${context}/resources/css/kal.css" />
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="${context}/resources/js/controller.board.js"></script>
+<style>
+	.kal-ss-faq-btnAll-style{
+		width: 90%;
+		margin-left: 70px;
+	}
+</style>
 </head>
 <body>
 <jsp:include page="/WEB-INF/views/common/sub-gnb-after-login.jsp" flush="false"/>
@@ -15,9 +21,9 @@
 <div class="kal-faq-ss-title">
 	<h2>FAQ</h2>
 </div>
-	<div class="kal-faq-ss-wrapper">
+	<div id="wrapper" class="kal-faq-ss-wrapper">
 			<div class="kal-faq-ss-h2">
-			<h2>자주 묻는 질문</h2>
+			질문하기
 			</div>
 			<div class="kal-faq-ss">
 			<form action="" class="kal-faq-ss-form">
@@ -61,21 +67,28 @@
 					</div>			
 				<button class="kal-search-ss-button-submit"></button>
 			</div>
-			<button id="kal-all-ss-button" class="kal-search-ss-button-all" type="button">전체 보기
-			<span></span>
-			</button>
-			</form>
+		</form>
+			<div class="kal-ss-faq-btnAll-style">
+				<button id="kal-all-ss-button" class="kal-search-ss-button-all">질문하기
+				<span></span>	
+				</button>
+			</div>
+			<div id="kal-faq-ss-container"  class="kal-faq-ss-list-border">
 			</div>
 			</div>
+			
+			</div>
+		
 	</div>
-	<jsp:include page="/WEB-INF/views/common/footer.jsp" flush="false"/>  
+	<%-- <jsp:include page="/WEB-INF/views/common/footer.jsp" flush="false"/>   --%>
 </body>
 <script>
-$(function(){
+//board.context.init('${context}');
+/* $(function(){
 	$('#kal-all-ss-button').on('click',function(){
 		alert('FAQ 리스트');
 		location.href='${context}/faqList';
 	});
-});
+}); */
 </script>
 </html>	

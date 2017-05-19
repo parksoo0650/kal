@@ -3,35 +3,52 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.kal.web.mapper.MemberMapper">
-	<resultMap id="Flight" type="com.kal.web.domain.Flight">
-		<id property="flightsSeq" column="flights_seq" />
-		<result property="flightName" column="flight_name" />
-	
+	<resultMap id="Member" type="com.kal.web.domain.Member">
+		<id property="userId" column="user_id" />
+		<result property="userPass" column="user_pass" />
+		<result property="familyName" column="family_name" />
+		<result property="firstName" column="first_name" />
+		<result property="korName" column="kor_name" />
+		<result property="phoneNo" column="phone_no" />
+		<result property="birthDate" column="birth_date" />
+		<result property="userGen" column="user_gen" />
+		<result property="userEmail" column="user_email" />
+		<result property="userAddr" column="user_addr" />
+		<result property="userPostNum" column="user_post_num" />
 	</resultMap>
 
 	<!--C -->
-	<insert id="addFlight">
-	
+	<insert id="addMember">
+	INSERT INTO MEMBER(user_id,user_pass,family_name,first_name,kor_name,phone_no,birth_date,user_gen,user_email,user_addr,user_post_num) 
+	VALUES (#{id}, #{pass}, #{familyName}, #{firstName}, #{korName}, #{phoneNo}, #{birthDate}, #{gen}, #{email}, #{addr}, #{postNum})
 	</insert>
 	
-	<select id="findNumberOfFlights" resultType="int">
+	<select id="findNumberOfMembers" resultType="int">
+	SELECT COUNT(*) FROM Member
 	</select>
 	
-
 	<!--R -->
-	<select id="findFlight" resultMap="Flight" parameterType="hashMap">
+	<select id="findMember" resultMap="Member" parameterType="hashMap">
+	SELECT * FROM Member WHERE user_id = #{value1} AND user_pass = #{value2}
 	</select>
 	
-	<select id="findFlights" resultMap="List" parameterType="hashMap">
+	<select id="findMembers" resultMap="Member" parameterType="hashMap">
+	SELECT * FROM Member WHERE ${key} LIKE #{value}
 	</select>
-
 
 	<!--U -->
-	<update id="updateFlight">
+	<update id="updateMember">
+	UPDATE Member SET
+		user_pass = #{pass},
+		user_email = #{email},
+		phone_no = #{phoneNo},
+		user_addr = #{addr}
+	WHERE user_id = #{id}
 	</update>
 	
 	<!--D-->
-	<select id="deleteFlight" >
+	<select id="deleteMember" >
+	DELETE FROM Member
+	WHERE ${key} = #{value}
 	</select>
-
 </mapper>

@@ -20,10 +20,6 @@
 	<!--R -->
 	<select id="findFlight" resultMap="Flight" parameterType="hashMap">
 	</select>
-	
-	<select id="findFlights" resultMap="List" parameterType="hashMap">
-	</select>
-
 
 	<!--U -->
 	<update id="updateFlight">

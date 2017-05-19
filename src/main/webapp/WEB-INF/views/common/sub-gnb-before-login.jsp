@@ -18,9 +18,9 @@
          	<a class="kal-before-login-sub-left-menu-text3" href="#">English</a>
          </div>
          <div class="kal-before-login-sub-right-menu">
-            <a class="kal-before-login-sub-right-menu-login" href="#">로그인   ｜</a>
-            <a class="kal-before-login-sub-right-menu-regist" href="">회원가입    ｜</a>
-            <a class="kal-before-login-sub-right-menu-myregist" href="">나의 예약    ｜</a>
+            <a class="kal-before-login-sub-right-menu-login" href="javascript:void(0)">로그인   ｜</a>
+            <a class="kal-before-login-sub-right-menu-regist" href="javascript:void(0)">회원가입    ｜</a>
+            <a id="admin" class="kal-before-login-sub-right-menu-admin" href="javascript:void(0)">관리자    ｜</a>
             <input class="kal-before-login-sub-right-menu-search" type="text" placeholder="검색"/>
             <a class="kal-before-login-sub-right-menu-search-icon" href="#"><img src="${context}/resources/img/main/icon-search.png"/></a>
          </div>
@@ -31,6 +31,18 @@
 	$(".kal-before-login-sub-right-menu-search-icon").on('click',function(){
 		alert('검색 결과');	
 		location.href="${context}/search";
+	});
+	$(".kal-before-login-sub-right-menu-login").on('click',function(){
+		alert('로그인 버튼 클릭');	
+		location.href="${context}/login";
+	});
+	$(".kal-before-login-sub-right-menu-regist").on('click',function(){
+		alert('회원가입 버튼 클릭');	
+		location.href="${context}/regist";
+	});
+	$('.kal-admin-test').on('click',function(){
+		alert('관리자 페이지 버튼 클릭');
+		location.href = "${context}/goAdmin";
 	});
 </script>
 </html>

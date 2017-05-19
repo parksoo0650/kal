@@ -95,6 +95,22 @@
 .kal-gg-sche-con-table2 tr td{color: #6a7373; border: 1px solid #dddddd; background-color: white; color: #737373; font-size:12px; height:35px; width:10%;}
 .kal-gg-stat-con{width:87%; height:auto; float:right; margin-left:5px; margin-top:40px; text-align:center; background-color:#f2f2f2; z-index:1;}
 .kal-gg-stat-chart{width:100%; height:500px; margin:50px; auto;}
+/* login page css */
+.kal-gg-loginbox{width: 550px; height: auto;  margin:0 auto;}
+.kal-gg-loginbox-img{margin-top: 35%; margin-bottom:35px; text-align: center;}
+.kal-gg-loginbox-big-box{width:412px; height:auto; margin:0 auto;}
+.kal-gg-loginbox-box-id{width:390px; height:50px; border:1px solid #ccc; border-bottom:0; padding-left:20px;}
+.kal-gg-loginbox-box-pass{width:390px; height:50px; border:1px solid #ccc; padding-left:20px;}
+.kal-gg-loginbox-middle-text {font-size:13px; color:#767676; margin:20px 0px; }
+.kal-gg-loginbox-middle-text div{float:right;}
+.kal-gg-click-text-area{padding-left:20px;}
+.kal-gg-click-text-area a{text-decoration:none; color:#767676;}
+.kal-gg-loginbox-middle-text span{color:#ebebeb}
+.kal-gg-loginbox-login-btn{background-color:white; border:2px solid #0180a3; width:412px; height:60px; color:#0180a3; cursor: pointer;}
+.kal-gg-loginbox-login-btn:hover{background-color:#0180a3; border:2px solid #0180a3; width:412px; height:60px; color:white; cursor: pointer; transition:0.5s;}
+.kal-gg-loginbox-under{font-size:13px; color:#767676; margin:50px auto; text-align: center;} 
+.kal-gg-loginbox-under span{color:#767676; padding:0 10px;  }
+.kal-gg-loginbox-under a{margin-left:5px; color:#ebebeb}
 /* 
 ===============
    kimgigun css end
@@ -181,6 +197,12 @@
 	border:1px solid #0180a3;
 	cursor:pointer;
 	box-shadow: 1px 1px 10px #888888;
+}
+.kal-res-jh-reser-gnb-backBtn:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
 }
 .kal-res-jh-reser-gnb-fareSelect{
 	width:220px;
@@ -417,6 +439,12 @@
 	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
 	border:1px solid #0180a3;
 }
+.kal-res1-jh-selectSeat:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
 .kal-res1-jh-submitWrapper{
 	text-align:center;
 }
@@ -437,6 +465,12 @@
 	display:inline-block;
 	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
 	border:1px solid #0180a3;
+}
+.kal-res1-jh-submit:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
 }
 
 /* 
@@ -645,7 +679,12 @@
 	border:1px solid #0180a3;
 	margin-bottom:20px;
 }
-
+.kal-res2-jh-submit:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
 /* 
 ===============
    res3 시작 
@@ -828,6 +867,13 @@
 	border:1px solid #0180a3;
 	margin-bottom:20px;
 }
+.kal-res3-jh-detailbtn:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+
 .kal-res3-jh-confirmbox-box2{
 	text-align:center;
 }
@@ -862,6 +908,12 @@
 	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
 	border:1px solid #0180a3;
 	margin-bottom:15px;
+}
+.kal-res3-jh-reser3submit:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
 }
 
 /* 
@@ -952,6 +1004,12 @@
 	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
 	border:1px solid #0180a3;
 	margin-bottom:15px;
+}
+.kal-res4-jh-submitbtn:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
 }
 
 /* 
@@ -1052,7 +1110,810 @@
 	display:block;
 	margin:20px auto 0;
 }
+.kal-res5-jh-submit:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
 
+/* 회원가입 페이지 시작 */
+
+.kal-jh-regist-main-wrapper{
+	width:100%;
+}
+.kal-jh-regist-sub-wrapper1{
+	width:450px;
+	margin:80px auto 0;
+	border:1px solid #0180a3;
+	padding:30px 50px;
+	border-bottom:none;
+}
+.kal-jh-regist-sub-wrapper1 h1{
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+.kal-jh-regist-headerText{
+	font-size:14px;
+	text-align:center;
+	padding:30px 0;
+	display:block;
+	color:#0180a3;
+}
+.kal-jh-regist-area1{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-id{
+	padding-right:50px;
+}
+.kal-jh-regist-inputBox-id{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-regist-area1-idcheckBtn{
+	margin-left:10px;
+	background-color:#0180a3;
+	width:110px;
+	color:white;
+	font-size:15px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:8px 10px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+}
+.kal-jh-regist-area1-idcheckBtn:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+.id-check-text{
+	font-size:14px;
+	letter-spacing:1px;
+	padding:20px 0 0;
+	text-align:left;
+	display:inline-block;
+	position:relative;
+	left:105px;
+	color:red;
+}
+.kal-jh-regist-inputBox-text-pw{
+	padding-right:35px;
+}
+.kal-jh-regist-inputBox-pw{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-regist-sub-wrapper2{
+	width:450px;
+	margin:0 auto 80px;
+	border:1px solid #0180a3;
+	padding:30px 50px 0;
+}
+.kal-jh-regist-inputBox-text-korname{
+	padding-right:38px;
+}
+.kal-jh-regist-area3{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-korname{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-regist-inputBox-text-familyname{
+	padding-right:12px;
+}
+.kal-jh-regist-inputBox-familyname{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-regist-area4{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-firstname{
+	padding-right:29px;
+}
+.kal-jh-regist-inputBox-firstname{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-regist-area5{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-phoneno{
+	padding-right:58px;
+}
+.kal-jh-regist-inputBox-phoneno{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-regist-area6{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-birth{
+	padding-right:43px;
+}
+.kal-jh-regist-inputBox-birth{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-regist-area7{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-email{
+	padding-right:60px;
+}
+.kal-jh-regist-inputBox-email{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-regist-area8{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-addr{
+	padding-right:60px;
+}
+.kal-jh-regist-inputBox-addr{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-regist-area9{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-passportno{
+	padding-right:46px;
+}
+.kal-jh-regist-inputBox-passportno{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-regist-area10{
+	padding-bottom:20px;
+}
+.kal-jh-regist-inputBox-text-gender{
+	padding-right:75px;
+}
+.kal-jh-regist-area11 span{
+	margin-right:22px;
+}
+.kal-jh-regist-inputBox-gender{
+	margin-right:20px;
+}
+.kal-jh-regist-area12{
+	text-align:center;
+	padding-top:20px;
+}
+.kal-jh-regist-submit{
+	background-color:#0180a3;
+	width:150px;
+	color:white;
+	font-size:18px;
+	margin-top:10px;
+	margin-bottom:30px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7px 26px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+}
+.kal-jh-regist-submit:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+/* mypage navigation css */
+.kal-jh-mypage-navibar-ul{
+	width:100%;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #2980a0;
+}
+.kal-jh-mypage-navibar-li {
+    float: left;
+}
+.kal-jh-mypage-navibar-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.kal-jh-mypage-navibar-li a:hover {
+	color:black;
+    background-color: #eaf0f2;
+}
+/* mypage css */
+.kal-jh-mypage-container{
+	width:100%;
+}
+.kal-jh-mypage-subwrapper{
+	width:960px;
+	border: 1px solid #0180a3;
+	margin:50px auto;
+}
+.kal-jh-mypage-container h1{
+	font-size:28px;
+	font-weight:bold;
+	text-align:center;
+	margin-top:50px;
+}
+/* mypage userinfo css */
+.kal-jh-mypage-userinfo-content-wrapper1{
+	border-bottom:1px solid #0180a3;
+}
+.kal-jh-mypage-maintext{
+	font-size:20px;
+	font-weight:bold;
+	padding:20px 20px 0;
+}
+.kal-jh-mypage-userInfo-txt1{
+	padding:0 20px 20px;
+}
+.kal-jh-mypage-userInfo-txt1 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userInfo-korname-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userInfo-korname{
+	padding:5px 0;
+}
+.kal-jh-mypage-userInfo-engname-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userInfo-engname{
+	padding:5px 0;
+}
+
+.kal-jh-mypage-userinfo-content-wrapper2{
+	border-bottom:1px solid #0180a3;
+}
+.kal-jh-mypage-userInfo-txt2{
+	padding:0 20px 20px;
+}
+.kal-jh-mypage-userInfo-txt2 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userInfo-email-text{
+	padding-top:20px;
+	font-weight:bold;
+	padding-right:42px;
+}
+.kal-jh-mypage-userInfo-email{
+	padding:5px 0;
+}
+.kal-jh-mypage-userInfo-addr-text{
+	font-weight:bold;
+	padding-right:42px;
+}
+.kal-jh-mypage-userInfo-addr{
+	padding:5px 0;
+}
+.kal-jh-mypage-userInfo-txt3{
+	padding:20px 20px 20px;
+}
+.kal-jh-mypage-userInfo-txt3 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userInfo-phoneno-text{
+	font-weight:bold;
+	padding-right:42px;
+}
+.kal-jh-mypage-userInfo-phoneno{
+	padding:5px 0;
+}
+.kal-jh-mypage-userInfo-passportno-text{
+	font-weight:bold;
+	padding-right:26px;
+}
+.kal-jh-mypage-userInfo-passportno{
+	padding:5px 0;
+}
+/* mypage usermodify css */
+.kal-jh-mypage-userupdate-content-wrapper1{
+	border-bottom:1px solid #0180a3;
+}
+.kal-jh-mypage-userUpdate-txt1{
+	padding:0 20px 20px;
+}
+.kal-jh-mypage-userUpdate-txt1 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userUpdate-korname-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userUpdate-korname{
+	padding:5px 0;
+}
+.kal-jh-mypage-userUpdate-engname-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userUpdate-engname{
+	padding:5px 0;
+}
+.kal-jh-mypage-userUpdate-content-wrapper2{
+	border-bottom:1px solid #0180a3;
+}
+.kal-jh-mypage-userUpdate-txt2{
+	padding:20px 20px 20px;
+}
+.kal-jh-mypage-userUpdate-txt2 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userUpdate-id-text{
+	font-weight:bold;
+	padding-right:52px;
+}
+.kal-jh-mypage-userUpdate-id{
+	padding:10px 0;
+}
+.kal-jh-mypage-userUpdate-pw-text{
+	padding-right:15px;
+	font-weight:bold;
+}
+.kal-jh-mypage-userUpdate-pw{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:0 auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+
+
+.kal-jh-mypage-userUpdate-txt3{
+	padding:20px 20px 20px;
+}
+.kal-jh-mypage-userUpdate-txt3 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userUpdate-email-text{
+	padding-right:32px;
+	font-weight:bold;
+}
+.kal-jh-mypage-userUpdate-email{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:10px auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-mypage-userUpdate-phoneno-text{
+	padding-right:32px;
+	font-weight:bold;
+}
+.kal-jh-mypage-userUpdate-phoneno{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:10px auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-mypage-userUpdate-addr-text{
+	padding-right:32px;
+	font-weight:bold;
+}
+.kal-jh-mypage-userUpdate-addr{
+	width:450px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	margin:10px auto;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-mypage-userUpdate-content-wrapper4{
+	text-align:center;
+}
+.kal-jh-mypage-userUpdate-submitBtn{
+	background-color:#0180a3;
+	width:150px;
+	color:white;
+	font-size:18px;
+	margin-top:10px;
+	margin-bottom:30px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:7px 26px;
+	display:inline-block;
+	box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+	border:1px solid #0180a3;
+}
+.kal-jh-mypage-userUpdate-submitBtn:hover{
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+.kal-jh-mypage-userReservation-content-wrapper1{
+	border-bottom:1px solid #0180a3;
+}
+.kal-jh-mypage-userReservation-txt1{
+	padding:0 20px 20px;
+}
+.kal-jh-mypage-userReservation-txt1 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userReservation-korname-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userReservation-korname{
+	padding:5px 0;
+}
+.kal-jh-mypage-userReservation-engname-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userReservation-engname{
+	padding:5px 0;
+}
+.kal-jh-mypage-userReservation-content-wrapper2{
+	border-bottom:1px solid #0180a3;
+}
+.kal-jh-mypage-userReservation-txt2{
+	padding:20px 20px 20px;
+}
+.kal-jh-mypage-userReservation-txt2 p{
+	font-size:18px;
+	font-weight:bold;
+	padding-bottom:20px;
+}
+.kal-jh-mypage-userReservation-sche-date1-text{
+	font-weight:bold;
+	padding-right:52px;
+}
+.kal-jh-mypage-userReservation-departure1-text{
+	font-weight:bold;
+	padding-right:50px;
+}
+.kal-jh-mypage-userReservation-departure1{
+	padding:5px 0;
+	display:inline-block;
+}
+.kal-jh-mypage-userReservation-arrival1-text{
+	font-weight:bold;
+	padding-right:50px;
+}
+.kal-jh-mypage-userReservation-arrival1{
+	padding:0 60px;
+}
+.kal-jh-mypage-userReservation-departure-time1-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userReservation-arrival-time1-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userReservation-arrival-time1{
+	padding-left:126px;
+}
+.kal-jh-mypage-userReservation-content-wrapper2{
+	border-bottom:1px solid #0180a3;
+}
+.kal-jh-mypage-userReservation-txt3{
+	padding:20px 20px 20px;
+}
+.kal-jh-mypage-userReservation-txt3 p{
+	font-size:18px;
+	font-weight:bold;
+	padding-bottom:20px;
+}
+.kal-jh-mypage-userReservation-sche-date2-text{
+	font-weight:bold;
+	padding-right:52px;
+}
+.kal-jh-mypage-userReservation-departure2-text{
+	font-weight:bold;
+	padding-right:50px;
+}
+.kal-jh-mypage-userReservation-departure2{
+	padding:5px 0;
+	display:inline-block;
+}
+.kal-jh-mypage-userReservation-arrival2-text{
+	font-weight:bold;
+	padding-right:50px;
+}
+.kal-jh-mypage-userReservation-arrival2{
+	padding:0 35px;
+}
+.kal-jh-mypage-userReservation-departure-time2-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userReservation-arrival-time2-text{
+	font-weight:bold;
+	padding-right:30px;
+}
+.kal-jh-mypage-userReservation-arrival-time2{
+	padding-left:126px;
+}
+
+/* userDelete page css */
+
+.kal-jh-mypage-userDelete-txt1{
+	padding:20px 20px 30px;
+}
+.kal-jh-mypage-userDelete-txt1 span{
+	display:inline-block;
+}
+.kal-jh-mypage-userDelete-pw-text{
+	padding-right:30px;
+	font-weight:bold;
+}
+.kal-jh-mypage-userDelete-pw{
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	letter-spacing:1px;
+	border-radius: 5px;
+    border: 1px solid #0180a3;
+}
+.kal-jh-mypage-userDelete-submitBtn{
+	color:white;
+	width:120px;
+	padding:8px 5px;
+	border:1px solid #186686;
+	background:#0180a3;
+	font-size:16px;
+	border-radius:10px;
+	margin-left:20px;
+	cursor:pointer;
+}
+
+.kal-jh-mypage-userDelete-submitBtn:hover {
+	color:white;
+	border:1px solid #186686;
+	background:#094f68;
+	transition:0.5s;
+}
+/* review  */
+.kal-review-main-wrapper{
+   background-attachment:fixed;
+   width:100%;
+   background-image:url("/web/resources/img/customerService/review-bg.jpg");
+   background-size:cover;
+   height:720px;
+}
+.kal-review-sub-wrapper-bg{
+   background-color: rgba(51, 51, 51, 0.4);
+   background:transparent black;
+   margin:50px auto;
+   width:960px;
+   height:400px;
+   
+}
+.kal-review-sub-wrapper{
+   width:960px;
+   margin:0 auto;
+   padding-top:60px;
+}
+.kal-review-sub-wrapper-headertext{
+   font-size:28px;
+   font-weight:bold;
+   color:white;
+   width:960px;
+   margin:0 auto;
+   padding-top:60px;
+}
+.kal-review-sub-wrapper-left-box{
+   float:left;
+   margin-left:35px;
+}
+.kal-review-type-ul {
+   width:300px;
+   background-color: #f1f1f1;
+}
+.kal-review-type-li1 a{
+   display: block;
+   background-color:#0180a3;
+   text-decoration: none;
+   text-align: center;
+   color:white;
+   font-weight:bold;
+   font-size:16px;
+   padding: 16px 16px;
+}
+.kal-review-type-li2 a {
+   display: block;
+   color:black;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+}
+.kal-review-type-li2 a:hover {
+   display: block;
+   color:white;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+   background-color:#303030;
+}
+.kal-review-type-li3 a {
+   display: block;
+   color:black;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+}
+.kal-review-type-li3 a:hover {
+   display: block;
+   color:white;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+   background-color:#303030;
+}
+.kal-review-type-li4 a {
+   display: block;
+   color:black;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+}
+.kal-review-type-li4 a:hover {
+   display: block;
+   color:white;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+   background-color:#303030;
+}
+.kal-review-type-li5 a {
+   display: block;
+   color:black;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+}
+.kal-review-type-li5 a:hover {
+   display: block;
+   color:white;
+   padding: 16px 16px;
+   text-decoration: none;
+   font-family: 맑은고딕;
+   text-align: center;
+   font-weight:bold;
+   font-size:16px;
+   background-color:#303030;
+}
+.kal-review-sub-wrapper-right-box-input{
+   width:550px;
+   height:240px;
+   border:none;
+   margin-left:40px;
+}
+.kal-review-star-icon{
+   width:20px;
+   position:relative;
+   right:70px;
+   top:105px;
+}
+.kal-review-pic-icon{
+   width:20px;
+   position:relative;
+   bottom:30px;
+   left:890px;
+}
+.kal-review-post-btn{
+   background-color:#0180a3;
+   width:120px;
+   color:white;
+   font-size:14px;
+   margin-top:30px;
+   margin-bottom:35px;
+   border-radius:3px;
+   cursor:pointer;
+   padding:7px 26px;
+   display:inline-block;
+   box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+   border:1px solid #0180a3;
+   float:right;
+   margin-right:35px;
+}
+.kal-review-post-btn:hover{
+   background-color:#004656;
+   width:120px;
+   color:white;
+   font-size:14px;
+   margin-top:30px;
+   margin-bottom:35px;
+   border-radius:3px;
+   cursor:pointer;
+   padding:7px 26px;
+   display:inline-block;
+   box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
+   border:1px solid #004656;
+   float:right;
+   margin-right:35px;
+}
 /* 
 ===============
    jihoo css end
@@ -1165,7 +2026,6 @@
 	padding-bottom:70px;
 	background-color: rgba(255,255,255,0.95);
 	font-family: "맑은 고딕";
-	
 }
 .kal-faq-ss-h2{
 	font-size : 30px;
@@ -1177,6 +2037,8 @@
 	padding-bottom: 1px;
 	margin-top: 50px;
 	margin-right: 20px;
+	color:white;
+	letter-spacing: 1px;
 }
 .kal-faq-ss{
 	margin: 0 auto 10px auto;
@@ -1357,9 +2219,18 @@
 }
  .kal-list-ss-li{
  	border-top: 1px solid #ccc;
- 	margin: 1px 20px -1px 20px;
+ 	margin: 10px 20px 1px 20px;
  	position: relative;
  	z-index: 1;
+ 	height: 50px;
+ 	text-align: left;
+ }
+  .kal-list-ss-li a{
+ 	text-decoration:none;
+ 	color : black;
+	margin-top : 20px;
+ 	font-size: 14px;
+ 	display: block;
  }
 .kal-list-ss-ul a{
 	color: #1a7e97;
@@ -1379,13 +2250,15 @@
     position: absolute;
     right: 0;
     text-align: center;
-    top: 0;
-    margin: 20px 10px;
+    margin: 1px 10px;
     background: url(/web/resources/img/faq/faq-image.png) left top no-repeat;
+    margin-top: -15px;
+	display: block;
 }
 .kal-list-ss-answer{
  	color: black;
- 	display: none;
+ 	display: block;
+ 	font-size: 14px;
 }
 .kal-list-ss-ans{
 	position: absolute;
@@ -1570,6 +2443,7 @@
 }
 .kal-main-event-wrapper:hover{
 	background-color:#2657a0;
+	transition:0.5s;
 }
 .kal-main-event-wrapper a{
 	color:white;
@@ -1658,7 +2532,7 @@
       color:white;
    }
    
-   .kal-before-login-sub-right-menu-myregist{
+   .kal-before-login-sub-right-menu-admin{
       text-decoration:none;
       font-weight:bold;
       font-size:12px;
@@ -1679,7 +2553,7 @@
    .kal-before-login-sub-right-menu-search-icon>img{
       position:absolute;
       top:14px;
-      right:25px;
+      right:46px;
    }
    /* after-login */
    .kal-after-login-sub-gnb{
@@ -1763,7 +2637,7 @@
    .kal-after-login-sub-right-menu-search-icon>img{
       position:absolute;
       top:14px;
-      right:25px;
+      right:30px;
    }
    /* 메인 네비게이션 */
    .kal-main-gnb{
@@ -1835,8 +2709,12 @@
    	  font-size:16px;
    	  padding:10px 20px;
    }
-   .kal-service-btn-content-faq{
+   .after-login-kal-service-btn-content-faq{
    	  display:inline-block;
+      margin-bottom:3px;
+   }
+   .after-login-kal-service-btn-content-question{
+        display:inline-block;
       margin-bottom:3px;
    }
    .kal-service-btn-content-review{
@@ -2059,6 +2937,9 @@
       margin-top:50px;
       text-align:right;
    }
+    .kal-footer-left-content-address-sns img{
+      margin-right:10px;
+   }
 
 /* 
 ===============
@@ -2071,1014 +2952,6 @@
    kimhayun css start
 =============== 
 */
-.kal-hy-mypage-navibar-ul{
-	width:100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #2980a0;
-    border-radius: 3px;
-}
-
-
-
-.kal-hy-mypage-navibar-li {
-    float: left;
-}
-
-.kal-hy-mypage-navibar-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.kal-hy-mypage-navibar-li a:hover {
-	color:black;
-    background-color: #eaf0f2;
-}
-.kal-hy-mypage-subnavibar-div{
-padding: 15px;
-border: 1px solid;
-border-color:#c7cacc;
-border-radius: 3px;
-
-}
-.kal-hy-mypage-subnavibar-a{
-text-decoration: none;
-margin: 15px;
-}
-
-.kal-hy-mypage-subnavibar-a:active{
-color:#186686;
-}
-.kal-hy-login-header{
-    background-color: #434343;
-    position: relative;
-    z-index: 502;
-    height: 40px;
-    color: #ffffff;
-    padding: 0 12px 0 33px;
-    font-family: '맑은 고딕'; 
-}
-.kal-hy-login-header_menu{
-	list-style: none;
-	float: right;
-}
-.kal-hy-login-header_title{
-	list-style: none;
-	float: left;
-	text-align: center;
-	margin-top: 10px;
-}
-.kal-hy-login-header_space{
-	float: right;
-	margin-top: 10px;
-	margin-right: 20px;
-}
-.kal-hy-login-header_menu li{
-	float:left;
-}
-.kal-hy-login-header_menu li a{
-	display: block;
-	color: white;
-	margin-right: 10px;
-}
-.kal-hy-mypage-container-title{
-margin:20px;
-font-size: 30px;
-}
-
-.kal-hy-mypage-container {
-   width:90%;
-   height:1000px;
-   margin:0 auto;
-   
-   
-}
-.kal-hy-mypage-container4 {
-   height: auto;
-   width: 100%;
-}
-.hr {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   border-width: 2px;
-}
-
-.kal-hy-userInfo-txt1{
-position:relative;
-left:30px;
-margin-top: 20px;
-font-family: 맑은고딕;
-font-size: 20px;
-}
-.kal-hy-userInfo-txt2{
-margin-left:30px;
-font-size: 15px;
-font-family: 맑은고딕;
-font-weight: 20px;
-}
-.kal-hy-userInfo-txt3{
-position: relative;
-left:30px;
-font-family: 맑은고딕;
-font-size: 15px;
-font-weight:bold;
-}
-.kal-hy-userInfo-txt4{
-position: relative;
-left:30px; 
-font-family: 맑은고딕;
-font-size: 15px; 
-margin: 15px;
-}
-.kal-hy-userInfo-txt5{
-position: relative;
-left:620px;
-font-family: 맑은고딕;
-font-size: 15px;
-font-weight:bold;
-}
-.kal-hy-userInfo-txt6{
-position: relative;
-left:635px;
-font-family: 맑은고딕;
-font-size: 15px;
-}
-.kal-hy-userInfo-txt7{
-position:relative;
-left: 30px;
-font-family: 맑은고딕;
-font-size: 15px;
-font-weight:bold;
-}
-.kal-hy-userInfo-txt8{
-position: relative;
-left: 50px;
-font-family: 맑은고딕;
-font-size: 15px;
-}
-
-.kal-hy-changepass-container-txt1{
-position: relative;
-top: 15px;
-font-size:20px;
-font-family: 맑은고딕;
-font-weight: 350;
-}
-.kal-hy-changepass-container-txt2{
-position: relative;
-top: 35px;
-font-size:13px;
-font-family: 맑은고딕;
-}
-
-.kal-hy-changepass-txt-star{
-color: orange;
-}
-.kal-hy-changepass-txt3{
-position: relative;
-top: 50px;
-font-size: 11px;
-font-family: 맑은고딕;
-}
-.kal-hy-changepass-txt4{
-position: relative;
-top: 60px;
-font-size: 11px;
-font-family: 맑은고딕
-}
-
-.kal-hy-changepass-txt5{
-position: relative;
-top: 70px;
-font-size: 11px;
-font-family: 맑은고딕;
-}
-
-.kal-hy-changepass-input1{
-position: relative;
-top: 55px; 
-width: 400px;
-height: 28px;
-}
-.kal-hy-changepass-input2{
-position: relative;
-top: 65px;
- width: 400px;
-height: 28px;
-}
-.kal-hy-changepass-input3{
-position: relative;
-top: 75px;
-width: 400px;
-height: 28px;
-}
-.kal-hy-changepass-canclebtn{
-position: relative;
-left:200px;
-top: 95px;
-width: 70px;
-height: 30px;
-color: white;
-background-color:#70706a;
-font-family: 맑은고딕 ;
-border-radius: 3px;
-}
-.kal-hy-changepass-canclebtn2{
-position: relative;
-left:220px;
-top: 95px;
-width: 150px;
-height: 30px;
-color: white;
-background-color: #337a93;
-font-family: 맑은고딕;
-border-radius: 3px;
-}
-
-.kal-hy-mypage-container2 {
-   position: relative;
-   border: 2px solid #9823ce;
-   height: 50px;
-   width: 100%;
-}
-
-.kal-hy-mypage-container3 {
-   border: 2px solid #9823ce;
-   margin-top: 0;
-   height: 30px;
-   width: 100%;
-   height: 30px;
-}
-
-.container4 {
-   border: 2px solid #9823ce;
-   height: 400px;
-   width: 100%;
-}
-
-.kal-hy-mypage-hr {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   border-width: 2px;
-}
-.kal-hy-changepass-txt1{
-position:relative;
-left:30px;
-top:20px;
-font-size: 20px;
-}
-.kal-hy-changepass-txt2{
-position: relative;
-left:30px;
-top: 30px;
-font-size: 16px;
-}
-.kal-hy-changepass-txt3{
-position: relative;
-top: 50px;
-font-size: 11px;
-font-family: 맑은고딕;
-}
-.kal-hy-changepass-txt4{
-position: relative;
-top: 60px;
-font-size: 11px;
-font-family: 맑은고딕
-}
-.kal-hy-changepass-txt5{
-position: relative;
-top: 70px;
-font-size: 11px;
-font-family: 맑은고딕;
-}
-.kal-hy-changepass-box{
-margin-top:10px;
-position: relative;
-left:30px;
-top:20px; 
-}
-
-strong{
-font-weight: bold;
-}
-.kal-hy-mypage-user-withdraw-con{
-
-width:90%;
-margin:0 auto;
-}
-
-.kal-hy-mypage-user-withdraw1{
-margin-top:6%;
-height:auto;
-}
-
-.kal-hy-mypage-user-withdraw1 p{
-padding-top:10px;
-height:auto;
-}
-
-
-.kal-hy-mypage-user-withdraw1 h1{
-font-size: 23px;
-}
-
-.kal-hy-mypage-user-withdraw2 {
-margin-top:30px;
-height: 40px;
-}
- 
-
-.kal-hy-mypage-user-withdraw2 input{
-margin:10px 10px 0 0;
-font-size:10px;
-display:inline-block;
-font-family:맑은 고딕;
-font-size:17px;
-padding-left:10px;
-width:286px;
-height:34px;
-text-align: left;
-}
- 
-.kal-hy-mypage-user-withdraw2 input.button {
-color:#186686;
-width:300px;
-height:100%;
-border:1px solid #186686;
-background:none;
-background-image:url(/web/resources/img/member/select.png);
-background-repeat:no-repeat;
-background-position:right center;
-}
-
-.kal-hy-mypage-user-withdraw2 input.button:hover {
-
-color:white;
-height:100%;
-border:1px solid #186686;
-/* background:none; */
-background-color:#186686;
-background-image:none;
-background-repeat:no-repeat;
-background-position:right center;
-transition:0.5s;
-}
-.kal-hy-mypage-user-withdraw1-sentence{
-padding:20px 0;
-}
-.kal-hy-mypage-user-empty{
-height:200px;
-}
-.kal-hy-mypage-container-title4 {
-   position: relative;
-   height: 50%;
-   width: 100%;
-}
-
-.hr {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   border-width: 2px;
-}
-
-
-
-.kal-hy-userUpdate-txt1{
-position:relative;
-left:30px;
-margin-top: 20px;
-font-family: 맑은고딕;
-font-size: 20px;
-}
-.kal-hy-mypage-userUpdte-text2{
-margin-left:5%;
-width:45%;
-margin-top: 20px;
-font-family: 맑은고딕;
-font-size: 15px;
-float:left;
-}
-
-.kal-hy-mypage-userUpdte-text3{
-width:40%;
-margin-top: 20px;
-font-family: 맑은고딕;
-font-size: 15px;
-float:right;
-}
-.kal-hy-userUpdate-kor-name{
-/* position:relative;
-left:30px; */
-
-font-size: 15px;
-font-family: 맑은고딕;
-font-weight: 20px;
-}
-.kal-hy-userUpdate-name{
-padding-top:10px;
-font-size: 15px;
-font-family: 맑은고딕;
-font-weight: 20px;
-display: inline-block;
-}
-.kal-hy-userUpdate-birth{
-/* position:relative;
-left:40%; */
-
-font-size: 15px;
-font-family: 맑은고딕;
-font-weight: 20px;
-}
-.kal-hy-userUpdate-birthdate{
-display:inline-block;
-padding-top:10px;
-font-size: 15px;
-font-family: 맑은고딕;
-font-weight: 20px;
-}
-.kal-hy-userUpdate-email{
-
-margin-top:15px;
-font-size: 15px;
-font-family: 맑은고딕;
-font-weight: 20px;
-display: inline-block;
-}
-
-.kal-hy-userUpdate-inputEmail{
-
- width: 400px;
- height: 25px;
-}
-.kal-hy-userUpdate-postAddr{
-margin-top:15px;
-display: inline-block;
-font-size: 15px;
-font-family: 맑은고딕;
-font-weight: 20px;
-}
-.kal-hy-userInfoUpdate-updateBtn{
-
-}
-.kal-hy-userUpdate-inputPostAddr{
-
-width: 200px;
- height:25px ;
-}
-.kal-hy-userUpdate-phone{
-margin-top:15px;
-font-size: 15px;
-font-family: 맑은고딕;
-font-weight: 20px;
-display: inline-block;
-}
-.kal-hy-userUpdate-inputPhone{
-
- width: 400px;
- height: 25px;
-}
-.kal-hy-userUpdate-addr{
-margin-top:15px;
-font-size: 15px;
-font-family: 맑은고딕;
-font-weight: 20px;
-display: inline-block;
-}
-.kal-hy-userUpdate-inputAddr1{
-
- width: 500px;
- height: 25px;
- width: 400px;
- height: 25px;
-}
-.kal-hy-userUpdate-inputAddr2{
-margin-top:10px;
- width:500px;
- height: 25px;
- width: 400px;
- height: 25px;
- display: inline-block;
-}
-.kal-hy-userUpdate-modifyBar{
-
-padding: 15px 700px;
-background-color: #e2ddb1
-}
-
-.kal-hy-userUpdate-hr{
-width:100%;
-}
-
-.kal-hy-userUpdate-star{
-color:orange;
-}
-
-
-
-.kal-hy-userUpdate-searchBtn{
-border-radius: 6px;
-width:80px;
-height:25px;
-color: white;
-background-color:#0180a3;
-font-family: 맑은고딕 
-}
-.kal-hy-userUpdate-confirmBtn{
-
-background-color:#0180a3;
-color:white;
-font-size:16px;
-border-radius:3px;
-cursor:pointer;
-padding:8px 30px;
-display:inline-block;
-margin:10% 1%;
-box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
-border:1px solid #0180a3; 
-right:20px;
-position: relative;
-left: 37%;
-font-family: 맑은고딕;
-}
-.kal-hy-userUpdate-cancleBtn{
-background-color:#0180a3;
-color:white;
-font-size: 16px;
-border-radius: 3px;
-cursor:pointer;
-display:inline-block;
-
-padding:8px 65px;
-box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
-border:1px solid #0180a3; 
-font-family: 맑은고딕;
-position: relative;
-left: 37%;
-
-}
-
-
-.kal-hy-mypage-container-postion{
-position: relative;
-left:20px;
-}
-
-.kal-hy-userInfo-subTitle{
-display:inline-block;
-margin-top:10px;
-font-size: 2;
-}
-.kal-hy-userInfo-div{
-padding:10px;
-background-color: #e8e4dc
-}
-
-.kal-hy-userInfo-detail{
-padding:10px;
-position: relative;
-left:30px; 
-top: 35px;
-}
-.kal-hy-userInfo-input-text{
-
-width: 508px;
-height: 29px;
-}
-.kal-hy-userInfo-star{
-color: orange;
-}
-
-.kal-hy-userInfo-birthBox-position{
-position: relative;
-left: 0px;
-}
-.kal-hy-userInfo-birthBox{
-width: 150px; 
-height: 29px;
-}
-.kal-hy-userInfo-loginBox{
-position: relative;
-top: 100px;
-}
-.kal-hy-userInfo-loginBox-font{
-padding:10px;
-background-color: #e8e4dc;
-}
-.kal-hy-userinfo-register-btn{
-position:relative;
-left:18%;
-top:50px;
-background-color: #0180a3;
-padding:10px 20px;
-color:white;
-border:none;
-cursor:pointer;
-font-size:18px;
-border-radius: 4px;
-box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
-
-}
-
-.kal-hy-mypage-user-empty{
-height:200px;
-}
-.kal-hy-mypage-subwrapper{
-   width:960px;
-   margin:10% auto;
-   height:600px;
-}
-.bookingMainTitle{
-   width:960px;
-   height:80px;
-}
-.bookingMainTitle>h1{
-   width:960px;
-   height:30px;
-   font-size:35px;
-   margin-top:50px;
-   font-weight:bold;
-}
-.kal-hy-mypage-bookingSubTitle{
-margin-top:30px;
-   width:960px;
-   height:64px;
-   border-bottom:7px solid #0180a3;
-}
-.kal-hy-mypage-bookingSubTitle>li>p{
-   width:480px;
-   height:50px;
-   float:left;
-   text-align:center;
-   font-size:26px;
-   cursor:pointer;
-   height:50px;
-   border-top-left-radius:3px;
-   border-top-right-radius:3px;
-   letter-spacing:-0.5px;
-   font-weight:normal;
-   padding-top:18px;
-}
-
-.kal-hy-mypage-checkIcon{
-   background-image:url(${context}/resources/img/reservation/checkIcon.png);
-   display:inline-block;
-   background-repeat:no-repeat;
-   width:30px;
-   height:18px;
-   position:relative;
-   right:190px;
-}
-.kal-hy-mypage-bookingBox{
-   width:100%;
-   height:500px;
-   border:1px solid #0180a3;
-}
-.commonResTitle{
-   margin-top:60px;
-   width:960px;
-   height:45px;
-   text-align:center;
-   font-size:26px;
-   letter-spacing:-0.5px;
-}
-.checkBlue{
-   width:50px;
-   height:50px;
-   display:inline-block;
-   background-repeat:no-repeat;
-   padding-right:150px;
-   font-weight:bold;
-   background-image:url(${context}/resources/img/reservation/checkBlue.png);
-   position:relative;
-   top:23px;
-   right:160px;
-}
-.checkWhite{
-   width:50px;
-   height:50px;
-   display:inline-block;
-   background-repeat:no-repeat;
-   background-image:url(${context}/resources/img/reservation/checkWhite.png);
-   position:relative;
-   top:23px;
-   right:185px;
-}
-.commonRes{
-   font-weight:bold;
-   cursor:pointer;
-}
-.bonusRes{
-   color:#666;
-   cursor:pointer;
-}
-.tripType{
-   width:900px;
-   margin:70px auto 30px;
-   text-align:left;
-}
-.tripType>img{
-   padding-right:15px;
-}
-.tripType>span{
-   padding-right:25px;
-}
-.tripDetails{
-   width:930px;
-   margin:0 auto;
-}
-.tripDetails>input{
-   width:300px;
-   height:50px;
-}
-.selectSeatWrapper{
-   width:959px;
-   height:120px;
-   border-top:1px solid #0180a3;
-   border-bottom:1px solid #0180a3;
-   margin:35px auto;
-   text-align:center;
-}
-#selectSeat{
-   background-color:#0180a3;
-   color:white;
-   font-size:18px;
-   margin-top:40px;
-   border-radius:3px;
-   cursor:pointer;
-   padding:7px 26px;
-   display:inline-block;
-   box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
-   border:1px solid #0180a3;
-}
-.submitWrapper{
-   text-align:center;
-   margin-top:75px;
-}
-.submitWrapper>p{
-   font-size:15px;
-   color:red;   
-}
-#submit{
-background-color:#0180a3;
-color:white;
-font-size:18px;
-margin-top:30px;
-border-radius:3px;
-cursor:pointer;
-padding:7px 26px;
-display:inline-block;
-box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
-border:1px solid #0180a3;
-}
-
-.kal-hy-mypage-subwrapper-title{
-font-size: 27px;
-padding:3px;
-display: inline-block;
-}
-
-.kal-hy-mypage-subwrapper-text{
-font-size: 13px;
-padding:3px;
-display: inline-block;
-}
-.kal-hy-mypage-subwrapper-texbox{
-margin:25px;
-}
-.kal-hy-mypage-reservation-menu{
-background-color:#186686;
-color:white;
-text-align:center;
-margin:0 auto;
-width:90%;	
-height:30px;
-
-}
-.kal-hy-mypage-reservation-menu ul{
-font-size:0;
-display:inline-block;
-margin:0;
-padding:0;
-}
-.kal-hy-mypage-reservation-menu ul li{
-font-size:15px;
-display:inline-block;
-padding:8px 50px;
-}
-.kal-hy-mypage-noneActive{
-   color:rgb(102,102,102);
-   background-color:rgb(223,233,233);
-   box-shadow:rgb(187, 187, 187)-2px -1px 2px 0px inset;
-}
-.kal-hy-mypage-active{
-   color:white;
-   background-color:rgb(1,128,163);
-}
-.kal-hy-mypage-update-ex{
-  position: relative;
-  top: 8%;
- left: 30px;
- margin-bottom:8%;
- font-family: 맑은고딕;
- font-size: 15px;
-}
-.kal-hy-mypage-update-space{
-	float:left; 
-	width:40%; 
-	margin-left:10% ;
-}
-.kal-hy-mypage-regiset-space{
-	position:relative;
-	left: 30px; 
-}
-/* review  */
-.kal-review-main-wrapper{
-   width:100%;
-   background-image:url("/web/resources/img/customerService/review-bg.jpg");
-   background-size:cover;
-   height:720px;
-}
-.kal-review-sub-wrapper-bg{
-   background-color: rgba(51, 51, 51, 0.4);
-   background:transparent black;
-   margin:50px auto;
-   width:960px;
-   height:400px;
-   
-}
-.kal-review-sub-wrapper{
-   width:960px;
-   margin:0 auto;
-   padding-top:60px;
-}
-.kal-review-sub-wrapper-headertext{
-   font-size:28px;
-   font-weight:bold;
-   color:white;
-   width:960px;
-   margin:0 auto;
-   padding-top:60px;
-}
-.kal-review-sub-wrapper-left-box{
-   float:left;
-   margin-left:35px;
-}
-.kal-review-type-ul {
-   width:300px;
-   background-color: #f1f1f1;
-}
-.kal-review-type-li1 a{
-   display: block;
-   background-color:#0180a3;
-   text-decoration: none;
-   text-align: center;
-   color:white;
-   font-weight:bold;
-   font-size:16px;
-   padding: 16px 16px;
-}
-.kal-review-type-li2 a {
-   display: block;
-   color:black;
-   padding: 16px 16px;
-   text-decoration: none;
-   font-family: 맑은고딕;
-   text-align: center;
-   font-weight:bold;
-   font-size:16px;
-}
-.kal-review-type-li2 a:hover {
-   display: block;
-   color:white;
-   padding: 16px 16px;
-   text-decoration: none;
-   font-family: 맑은고딕;
-   text-align: center;
-   font-weight:bold;
-   font-size:16px;
-   background-color:#303030;
-}
-.kal-review-type-li3 a {
-   display: block;
-   color:black;
-   padding: 16px 16px;
-   text-decoration: none;
-   font-family: 맑은고딕;
-   text-align: center;
-   font-weight:bold;
-   font-size:16px;
-}
-.kal-review-type-li3 a:hover {
-   display: block;
-   color:white;
-   padding: 16px 16px;
-   text-decoration: none;
-   font-family: 맑은고딕;
-   text-align: center;
-   font-weight:bold;
-   font-size:16px;
-   background-color:#303030;
-}
-.kal-review-type-li4 a {
-   display: block;
-   color:black;
-   padding: 16px 16px;
-   text-decoration: none;
-   font-family: 맑은고딕;
-   text-align: center;
-   font-weight:bold;
-   font-size:16px;
-}
-.kal-review-type-li4 a:hover {
-   display: block;
-   color:white;
-   padding: 16px 16px;
-   text-decoration: none;
-   font-family: 맑은고딕;
-   text-align: center;
-   font-weight:bold;
-   font-size:16px;
-   background-color:#303030;
-}
-.kal-review-type-li5 a {
-   display: block;
-   color:black;
-   padding: 16px 16px;
-   text-decoration: none;
-   font-family: 맑은고딕;
-   text-align: center;
-   font-weight:bold;
-   font-size:16px;
-}
-.kal-review-type-li5 a:hover {
-   display: block;
-   color:white;
-   padding: 16px 16px;
-   text-decoration: none;
-   font-family: 맑은고딕;
-   text-align: center;
-   font-weight:bold;
-   font-size:16px;
-   background-color:#303030;
-}
-.kal-review-sub-wrapper-right-box-input{
-   width:550px;
-   height:240px;
-   border:none;
-   margin-left:40px;
-}
-.kal-review-star-icon{
-   width:20px;
-   position:relative;
-   right:70px;
-   top:105px;
-}
-.kal-review-pic-icon{
-   width:20px;
-   position:relative;
-   bottom:30px;
-   left:890px;
-}
-.kal-review-post-btn{
-   background-color:#0180a3;
-   width:120px;
-   color:white;
-   font-size:14px;
-   margin-top:30px;
-   margin-bottom:35px;
-   border-radius:3px;
-   cursor:pointer;
-   padding:7px 26px;
-   display:inline-block;
-   box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
-   border:1px solid #0180a3;
-   float:right;
-   margin-right:35px;
-}
-.kal-review-post-btn:hover{
-   background-color:#004656;
-   width:120px;
-   color:white;
-   font-size:14px;
-   margin-top:30px;
-   margin-bottom:35px;
-   border-radius:3px;
-   cursor:pointer;
-   padding:7px 26px;
-   display:inline-block;
-   box-shadow:0 1px 2px 1px rgba(0,0,0,0.2);
-   border:1px solid #004656;
-   float:right;
-   margin-right:35px;
-}
 .kal-hy-grade-star-rating {font-size:0; letter-spacing:-4px;}
 .kal-hy-grade-star-rating a {
     font-size:22px;
@@ -3098,8 +2971,236 @@ padding:8px 50px;
 */
 
 
+/* 
+===============
+  seongsoo qna css end
+=============== 
+*/
 
+.kal-qna-ss-write{
+	padding: 8px,0;
+	background-color:#186686 ;
+	border-bottom: 3px solid #dddfe2;
+	border-radius: 2px, 2px, 0,0;
+	font-weight: bold;
+	margin-top: 0px;
+	height: 50px;
+	width: 100%;
+	font-size: 18px;
+	height: 80px;
+	}
+.kal-qna-ss-text{
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	height: 100%;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-left: -20px;
+ `}
+ .kal-qna-ss-text-style{
+ 	position: relative;
+ 	height: 200px;
+ 	line-height: 28px;
+ 	outline: 0;
+ 	resize: none;
+ 	width:100%;
+ 	font-size: 14px;
+ 	border : 2px solid #186686;
+ 	margin-left: 20px;
+ 	margin-top: 50px;
+ 	font-size: 20px;
+ }
+ .kal-qna-ss-writerbox{
+	position:relative;
+	z-index: 505;
+	border: 1px solid white;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 50px;
+	margin-top:20px;
+	padding-bottom:20px;
+	background-color: rgba(255,255,255,0.95);
+	font-family: "맑은 고딕";
+	border : 2px solid #186686;
+}
+.kal-qna-ss-bottom-border{
+	padding: 10px,0;
+	border-top: 1px solid #dddfe2;
+	border-radius: 2px, 2px, 0,0;
+	font-weight: bold;
+	width: 100%;
+}
+.kal-search-ss-button-add{
+	width: 110px;
+	height: 47px;
+	font-size: 16px;
+	padding: 40px,0;
+	margin-top: 10px;
+	margin-left : 88%;
+	vertical-align: middle;
+	text-align: center;
+	border-color: #186686;
+	color: #186686;
+	background-color: #ffffff;
+	border-style: solid;
+	padding-left: 10px;
+	text-align: center;
+}
+.kal-search-ss-button-add:hover,.kal-search-ss-button-add:focus{
+	outline : black;
+	background-color: #186686;
+	color: white;
+}
+.kal-qna-ss-ul{
+	position: relative;
+	list-style-type: none;
+	margin: 1px 20px -1px 20px;
+}
+ .kal-qna-ss-li{
+	border-top: 1px solid #ccc;
+	margin: 1px 15px -1px 15px;
+	position: relative;
+	z-index: 1;
+	margin-top: 10px;
+}
+.kal-qna-ss-ul button{
+	background-color:#f6f7f9 ;
+	border-bottom: 3px solid #dddfe2;
+	width :100%;
+	color: #1a7e97;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	padding: 20px 50px 20px 10px;
+	display: block;
 
+}
+.kal-qna-ss-list-border{
+	margin-top: 20px;
+}
+.kal-qna-ss-button-ques{
+	padding: 11px, 42px,10px,20px;
+	text-align: cetner;
+	border : 2px solid #186686;
+	color : white;
+	background-color:#186686;
+	position: relative;
+	width: 20%;
+	height: 47px;
+	margin-bottom: 50px;
+	margin-left: 20px;
+}
+.kal-qna-ss-button-ques:hover,.kal-qna-ss-button-ques:focus{
+	outline : white;
+	background-color: white;
+	color: #186686;
+	transition:0.5s;
+	cursor: pointer;
+}
+.kal-qna-ss-p{
+	font-size: 14px;
+	margin-top:10px; 
+}
+.kal-search-ss-button-reply{
+	width: 120px;
+	height: 75px;
+	font-size: 16px;
+	border-color: #186686;
+	color: #186686;
+	background-color: #ffffff;
+	border-style: solid;
+	text-align: center;
+	margin-right: 100px;
+	margin-top: 200px;
+	margin-left: 352px;
+}
+.kal-search-ss-button-reply:hover,.kal-search-ss-button-reply:focus{
+	outline : black;
+	background-color: #186686;
+	color: white;
+}
+.kal-qna-ss-reply-style{
+	height: 150%;
+	line-height: 28px;
+	max-height: 75px;
+	min-height: 69px;
+	outline: 0;
+	width: 150%;
+	font-size: 14px;
+	margin-top: 200px;
+	margin-left: 180px;
+	border : 2px solid #186686;
+	}
+.kal-search-ss-button-style{
+	width: 8px;
+	height: 13px;
+	display: inline-block;
+	float : right;
+	right: 0;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.kal-qna-ss-align{
+	float:left;
+	width:50%;
+}
+.kal-qna-ss-answer{
+ 	color: black;
+ 	display: none;
+ 	height: 100%;
+ 	padding-bottom: 20%;
+}
+.kal-qna-ss-reple{
+	margin-right: 100px;
+}
+.kal-qna-ss-answerbox{
+	position:relative;
+	z-index: 505;
+	border: 1px solid white;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 50px;
+	padding-bottom:20px;
+	background-color: rgba(255,255,255,0.95);
+	font-family: "맑은 고딕";
+	border : 2px solid #186686;
+	margin-top: 50px;
+	width:180%;
+}
+.kal-qna-ss-select{
+	height: 30px;
+   width: 10%;
+}
+.kal-qna-ss-select-style{
+	height: 47px;
+	background-image: url(/web/resources/img/faq/select-image.png);
+	background-repeat:no-repeat;
+	background-position: right center;
+	background-color: white;
+	width:30%;
+	margin-right:800px;
+	overflow: hidden;
+	-webkit-appearance: none;
+}
+.kal-qna-ss-select-text{
+	margin-left: 3px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+	
+}
+.kal-qna-ss-select-typeText{
+	margin-bottom: 10px;
+	color: black;
+}
+.kal-qna-ss-qnaWriter{
+	padding: 10px, 0, 0;
+	color: black;
+}
+.kal-qna-ss-btnText{
+	text-align: left;
+	font: 14px;
+}
 
 
 

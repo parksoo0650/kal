@@ -1,19 +1,24 @@
 package com.kal.web.service;
 
-import java.util.List;
 import java.util.Map;
-
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.RequestMapping;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.kal.web.controller.MemberController;
 import com.kal.web.domain.Member;
-@Component
-public interface MemberService {
-	public void addMember(Member member);
-	public int findNumberOfMembers();
-	public Member findMember(Map<String,Object> paramMap);
-	public List<Member> findMembers(Map<String,Object> paramMap); 
-	public void updateMember(Member member);
-	public void deleteMember(Map<String,Object> paramMap);
+import com.kal.web.mapper.MemberMapper;
+
+@Service
+public class MemberService {
+	private static final Logger logger = LoggerFactory.getLogger(MemberController.class);
+	@Autowired MemberMapper mapper;
+	
+	public Member login(Map<String,Object> paramMap) throws Exception{
+		logger.info("MemberService-login() {}","ENTER");
+		System.out.println("MemberService로 넘어온 value1:"+paramMap.get("value1"));
+		System.out.println("MemberService로 넘어온 value2:"+paramMap.get("value2"));
+		IGetService service = (map)->mapper.findMember(map);
+		return (Member) service.execute(paramMap);
+	}
 }

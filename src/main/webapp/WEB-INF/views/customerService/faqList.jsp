@@ -61,12 +61,9 @@
 					</div>
 				<button class="kal-search-ss-button-submit"></button>
 			</div>
-			<button id="kal-all-ss-button" class="kal-search-ss-button-all" type="button">전체 보기
-			<span></span>
-			</button>
 			</form>
 			<div id="container">
-			</div>
+			
 				<ul class="kal-result-ss-count">
 					<li>전체
 					<span class="kal-result-ss-before"></span>
@@ -156,6 +153,7 @@
 			</ul>
 			</div>
 			</div>
+	</div>
 	</div>
 	<jsp:include page="/WEB-INF/views/common/footer.jsp" flush="false"/>  
 </body>

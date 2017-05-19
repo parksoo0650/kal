@@ -29,4 +29,9 @@ public class BoardController {
 		logger.info("SeoungsooController - faqList() {}","Enter");
 		return "/customerService/faqList";
 	}
+	@RequestMapping("/qna")
+	public String qna(){
+		logger.info("SeoungsooController - qna() {}","Enter");
+		return "/customerService/qna";
+	}
 }

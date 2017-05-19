@@ -6,5 +6,5 @@ import lombok.Data;
 
 @Component @Data
 public class BoardFAQ {
-	private String faqSeq,faqReq,faqFixAnswer,faqReqType;
+	private String faqSeq,userId,faqReq,faqAnswer,faqReqType;
 }
