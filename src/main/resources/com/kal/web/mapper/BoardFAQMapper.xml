@@ -11,15 +11,23 @@
        <result property="faqReqType" column="faq_req_type"/>
      </resultMap>
       <insert id="addBoardFAQ">
-      INSERT INTO faq (user_id,faq_req,faq_answer,faq_req_type) VALUES(#{userId},#{faqReq},#{faqAnswer},#{faqReqType})
+      INSERT INTO faq (user_id,faq_req,faq_answer,faq_req_type) VALUES(#{id},#{qna},#{faqAnswer},#{qnatype})
       </insert>
       <select id="findBoardFAQ" resultMap="BoardFAQ" parameterType="hashMap">
 		SELECT * FROM faq WHERE faq_seq = #{seq}       
       </select>
-      <select id="findBoardFAQs" resultMap="BoardFAQ" parameterType="hashMap">
-      SELECT * FROM faq;
+       <select id="allFindBoardFAQs" resultMap="BoardFAQ" parameterType="hashMap">
+		SELECT * FROM ${group} ORDER BY faq_seq DESC
       </select>
-      <select id="findNumberOfBoardFAQs"  resultType="int" parameterType="hashMap"></select>
+      <select id="findBoardFAQs" resultMap="BoardFAQ" parameterType="hashMap">
+      SELECT * FROM faq WHERE faq_req_type like #{selectType} ORDER BY faq_seq DESC
+      </select>
+        <select id="allNumberOfBoardFAQs"  resultType="int" parameterType="hashMap">
+      SELECT COUNT(*) FROM ${group}
+      </select>
+      <select id="findNumberOfBoardFAQs"  resultType="int" parameterType="hashMap">
+      SELECT COUNT(*) FROM faq WHERE faq_req_type = #{selectType} 
+      </select>
       <update id="updateBoardFAQ"></update>
       <delete id="deleteBoardFAQ"></delete>
      

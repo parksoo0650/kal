@@ -9,5 +9,5 @@ import com.kal.web.domain.BoardFAQ;
 @Service
 @FunctionalInterface
 public interface IPostService {
-	public int execute(BoardFAQ faq) throws Exception;
+	public int execute(Map<String, Object>paramMap) throws Exception;
 }

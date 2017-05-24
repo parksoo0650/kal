@@ -1,12 +1,11 @@
 package com.kal.web.service;
 
-import java.util.List;
 import java.util.Map;
-
 import org.springframework.stereotype.Service;
+import com.kal.web.domain.Member;
 
 @Service
 @FunctionalInterface
-public interface IListService {
-	public List<?> execute(Map<String, Object>map)throws Exception;
+public interface IPutService {
+	public int execute(Map<String,Object> paramMap) throws Exception;
 }

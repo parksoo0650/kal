@@ -18,7 +18,7 @@
 	</resultMap>
 
 	<!--C -->
-	<insert id="addMember">
+	<insert id="addMember" parameterType="hashMap">
 	INSERT INTO MEMBER(user_id,user_pass,family_name,first_name,kor_name,phone_no,birth_date,user_gen,user_email,user_addr,user_post_num) 
 	VALUES (#{id}, #{pass}, #{familyName}, #{firstName}, #{korName}, #{phoneNo}, #{birthDate}, #{gen}, #{email}, #{addr}, #{postNum})
 	</insert>
@@ -28,6 +28,11 @@
 	</select>
 	
 	<!--R -->
+	
+	<select id="idOverlapCheck" parameterType="hashMap"  resultType="int">
+	SELECT COUNT(*) FROM Member WHERE user_id = #{value}
+	</select>
+	
 	<select id="findMember" resultMap="Member" parameterType="hashMap">
 	SELECT * FROM Member WHERE user_id = #{value1} AND user_pass = #{value2}
 	</select>
@@ -37,18 +42,18 @@
 	</select>
 
 	<!--U -->
-	<update id="updateMember">
+	<update id="updateMember" parameterType="hashMap">
 	UPDATE Member SET
-		user_pass = #{pass},
-		user_email = #{email},
-		phone_no = #{phoneNo},
-		user_addr = #{addr}
+		user_pass = #{newPw},
+		user_email = #{newEmail},
+		phone_no = #{newPhoneNo},
+		user_addr = #{newAddr}
 	WHERE user_id = #{id}
 	</update>
 	
 	<!--D-->
-	<select id="deleteMember" >
+	<delete id="deleteMember" parameterType="hashMap">
 	DELETE FROM Member
-	WHERE ${key} = #{value}
-	</select>
+	WHERE user_id = #{loginedId} AND user_pass = #{pw}
+	</delete>
 </mapper>
