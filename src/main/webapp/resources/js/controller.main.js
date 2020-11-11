@@ -485,10 +485,10 @@ main.member=(function(){
 				if(member.validation.nullCheck(birth)==true){
 					$('.birth-check-text').html('');
 				}
-				/*여권번호 정규식*/
+			/*	여권번호 정규식
 				if(member.validation.postNoCheck(passportNo)==false){
 					$('.passportno-check-text').html('<span style="color:red;">여권번호는 필수 입력값입니다.</span>');
-				}
+				}*/
 				if(member.validation.postNoCheck(passportNo)==true){
 					$('.passportno-check-text').html('');
 				}
@@ -526,7 +526,7 @@ main.member=(function(){
 				   member.validation.engNameCheck(firstName)==true &&
 				   member.validation.phoneNoCheck(phoneNo)==true &&
 				   member.validation.nullCheck(birth)==true &&
-				   member.validation.postNoCheck(passportNo)==true &&
+				   /*member.validation.postNoCheck(passportNo)==true &&*/
 				   member.validation.emailCheck(email)==true &&
 				   member.validation.nullCheck(addr)==true &&
 				   member.validation.nullCheck(addrDetail)==true &&
